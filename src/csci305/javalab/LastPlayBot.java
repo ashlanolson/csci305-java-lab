@@ -11,7 +11,8 @@ package csci305.javalab;
  */
 public class LastPlayBot extends Player 
 {
-    Element last;
+    private Element last = null;
+    
     
     public LastPlayBot(String name)
     {
@@ -23,9 +24,15 @@ public class LastPlayBot extends Player
     {
         if(last == null)
         {
-            Player choice = last.getName();
-            
-            
+            last = new Rock("Rock");
         }
+        return last;
     }
+    
+    
+    public void lastMove(Element lastChoice)
+    {
+        last = lastChoice;
+    }
+        
 }

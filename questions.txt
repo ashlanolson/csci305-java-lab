@@ -1,0 +1,13 @@
+Ashlan Olson
+Questions (Java Lab)
+
+1. 
+2. For Mybot, I decided to have it be kind of like a hybrid baby between RandomBot and StupidBot. It uses a random generator to pick what it will play; however, it only likes choices that start with 's', so I only gave it 2 choices to pick from: Scissors and Spock.
+3. 
+4. I can definitely beat MyBot and the StupidBot since I know what they will choose between, and the iterator because I know it will just choose my last play if I am playing as human. I did not really see any other patterns that were randomly generated more than once, however.
+5. There may be a way to set up players against each other that you as the programmer knows and if you chose to play against someone who was unaware of your implementation, you could easily win every time which would work;however, I do not think there is any way to make sure this happens when the bots are playing by themselves. The only way to make this happen would be to make bots kind of like how I implemented MyBot that randomly choose options but are given a smaller number to choose from. This gives the bot an advantage. Otherwise, most implementations made will be up to probability or if you could somehow create a bot that knew the other bots answer before it chose its own.
+6. I like Java because I have the most practice using it from the classes at MSU and it makes the most sense to me.
+7. One thing I do not like about Java is how you have to repeat yourself a lot with all the variables and objects you create.
+8.I enjoyed this lab because it did not take me as long as the other ones have, probably because I am the most familiar with Java. 
+9. I spent about 10-12 hours. I got stuck on the LastMoveBot.
+10. Just experience from the previous classes here at MSU.

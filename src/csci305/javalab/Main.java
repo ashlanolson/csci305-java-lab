@@ -109,7 +109,7 @@ public class Main
         int player1Wins = 0;
         int player2Wins = 0;
        
-        for (int i = 1; i < 5; i++)
+        for (int i = 1; i < 6; i++)
         {
             System.out.println("Round " + i + ":");
             Element player1Choice = player1.play();

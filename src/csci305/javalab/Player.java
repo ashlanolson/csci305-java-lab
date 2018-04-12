@@ -11,7 +11,8 @@ package csci305.javalab;
  */
 public abstract class Player 
 {
-    private String name;
+    private final String name;
+    public Element lastChoice;
     
     public Player(String name)
     {
@@ -21,6 +22,11 @@ public abstract class Player
     public String getName()
     {
         return this.name;
+    }
+    
+    public void last(Element choice)
+    {
+        this.lastChoice = choice;
     }
     
     public abstract Element play();
