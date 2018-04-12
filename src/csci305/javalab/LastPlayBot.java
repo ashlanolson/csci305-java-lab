@@ -29,10 +29,5 @@ public class LastPlayBot extends Player
         return last;
     }
     
-    
-    public void lastMove(Element lastChoice)
-    {
-        last = lastChoice;
-    }
         
 }

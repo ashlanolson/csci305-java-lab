@@ -13,6 +13,9 @@ import java.util.Scanner;
 /**
  *
  * @author Ashlan.olson
+ * This lab has different bots that play "Rock, Paper, Scissors, Lizard, Spock" against one another
+ * CSCI305
+ * 04/11/18
  */
 public class Main 
 {

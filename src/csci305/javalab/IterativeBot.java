@@ -8,6 +8,7 @@ package csci305.javalab;
 /**
  *
  * @author Ashlan.olson
+ * Bot that moves through each choice 1 by 1
  */
 public class IterativeBot extends Player
 {
@@ -19,7 +20,7 @@ public class IterativeBot extends Player
 
     @Override
     public Element play() {
-        Element choice = null;
+        Element choice = null;      /*I used a switch statement for the bot to iterate through the choices*/
         
         switch(num){
             case (1):
