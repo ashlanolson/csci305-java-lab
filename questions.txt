@@ -1,9 +1,9 @@
 Ashlan Olson
 Questions (Java Lab)
 
-1. 
+1.I could not get this bot to work. I tried all kinds of implementation but none seemed to work for me unfortunately. 
 2. For Mybot, I decided to have it be kind of like a hybrid baby between RandomBot and StupidBot. It uses a random generator to pick what it will play; however, it only likes choices that start with 's', so I only gave it 2 choices to pick from: Scissors and Spock.
-3. 
+3. From our class text and discussions, Java is a weakly typed language that checks types before it will allow the user to run the program. Java uses a lot of built in conversions kind of like C does, so if you are expecting a specific number to come out, it can be hard to decipher where your error is becaues Java is just converting it for you, such as when you take an average between two integers. Java uses Static(compile time) and dynamic typing(run time). User defined types allow the user to create a class with different types within it.
 4. I can definitely beat MyBot and the StupidBot since I know what they will choose between, and the iterator because I know it will just choose my last play if I am playing as human. I did not really see any other patterns that were randomly generated more than once, however.
 5. There may be a way to set up players against each other that you as the programmer knows and if you chose to play against someone who was unaware of your implementation, you could easily win every time which would work;however, I do not think there is any way to make sure this happens when the bots are playing by themselves. The only way to make this happen would be to make bots kind of like how I implemented MyBot that randomly choose options but are given a smaller number to choose from. This gives the bot an advantage. Otherwise, most implementations made will be up to probability or if you could somehow create a bot that knew the other bots answer before it chose its own.
 6. I like Java because I have the most practice using it from the classes at MSU and it makes the most sense to me.
