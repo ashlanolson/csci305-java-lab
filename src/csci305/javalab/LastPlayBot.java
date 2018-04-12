@@ -9,6 +9,23 @@ package csci305.javalab;
  *
  * @author Ashlan.olson
  */
-public class LastPlayBot {
+public class LastPlayBot extends Player 
+{
+    Element last;
     
+    public LastPlayBot(String name)
+    {
+        super(name);
+    }
+    
+    @Override
+    public Element play()
+    {
+        if(last == null)
+        {
+            Player choice = last.getName();
+            
+            
+        }
+    }
 }

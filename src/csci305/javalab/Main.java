@@ -5,6 +5,7 @@
  */
 package csci305.javalab;
 
+import static com.sun.jmx.snmp.ThreadContext.contains;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -72,9 +73,10 @@ public class Main
         }
         System.out.println("Select Player 2:");
         choice2 = scan.nextInt();
-        if(choice2 < 1 || choice2 > 6)
+        System.out.println("\n");
+        while(choice2 < 1 || choice2 > 6)
         {
-            System.out.println("Error. Please try again.");
+            System.out.println("Error. Please enter a number between 1 and 6.");
             choice2 = scan.nextInt();
         }
         
@@ -102,6 +104,56 @@ public class Main
                 player2 = new StupidBot("StupidBot");
            
         }
-        System.out.println(player1.getName() + " vs " + player2.getName() + ". Go!");
+        System.out.println(player1.getName() + " vs " + player2.getName() + ". Go!\n");
+        
+        int player1Wins = 0;
+        int player2Wins = 0;
+       
+        for (int i = 1; i < 5; i++)
+        {
+            System.out.println("Round " + i + ":");
+            Element player1Choice = player1.play();
+            Element player2Choice = player2.play();
+            System.out.println("Player 1 chose: " + player1Choice.getName());
+            System.out.println("Player 2 chose: " + player2Choice.getName());
+            
+
+            System.out.println(player1Choice.compareTo(player2Choice));
+            Outcome string = player1Choice.compareTo(player2Choice);
+            if(string.finish.equals("Win"))
+            {
+                System.out.println("Player 1 won the round\n");
+                player1Wins++;
+            }
+            else if(string.finish.equals("Tie"))
+            {
+                System.out.println("Round was a Tie\n");
+            }
+            else if(string.finish.equals("Lose"))
+            {
+                System.out.println("Player 2 won the round\n");
+                player2Wins++;
+            }
+        }
+            System.out.println("The score is " + player1Wins + " to " + player2Wins);
+            if(player1Wins > player2Wins)
+            {
+                System.out.println("Player 1 Wins");
+            }
+            else if(player1Wins < player2Wins)
+            {
+                System.out.println("Player 2 Wins");
+            }
+            else
+            {
+                System.out.println("The game was a draw");
+            }
+        
+    
+    
+    
     }
+   
+
+
 }

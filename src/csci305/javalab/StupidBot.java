@@ -19,7 +19,7 @@ public class StupidBot extends Player
     @Override
     public Element play()
     {
-        Element choice = new Paper("Paper");
+        Element choice = new Paper("Paper"); //Bot chooses paper every time
         return choice;
     }
     
