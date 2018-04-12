@@ -7,6 +7,7 @@ package csci305.javalab;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 /**
  *
@@ -26,11 +27,43 @@ public class Main
         moves.put("Scissors", new Scissors("Scissors"));
         moves.put("Lizard", new Lizard("Lizard"));
         moves.put("Spock", new Spock("Spock"));
+       
         
-        Player p1 = new StupidBot("StupidBot");
-        Player p2 = new RandomBot("RandomBot");
-        Element p1move = p1.play();
-        Element p2move = p2.play();
-        System.out.println(p1move.compareTo(p2move));
+        Scanner scan = new Scanner(System.in);
+        int choice1 = 0;
+        int choice2 = 0;
+        Player player1;
+        Player player2;
+        
+        System.out.println("Welcome to Rock, Paper, Scissors, Lizard, Spock, implemented by Ashlan Olson!");
+        System.out.println("Please choose two players:");
+        System.out.println("(1) Human\n" +"(2) Stupidbot\n" + "(3) RandomBot\n" + "(4) IterativeBot\n" + "(5) LastPlayBot\n" + "(6) MyBot\n");
+        System.out.println("Select Player 1:");
+        while (choice1 <= 6)
+        {
+            choice1 = scan.nextInt();
+            
+            if(choice1 < 1 || choice1 > 6)
+            {
+                System.out.println("Error. Please try again.");
+            }
+        }
+        
+        switch (choice1)
+        {
+            case(1):
+                player1 = new Human("Human");
+                break;
+            case(2):
+                player1 = new StupidBot("Stupidbot");
+            case(3):
+                player1 = new RandomBot("RandomBot");
+                break;
+            case(4):
+                player1 = new IterativeBot("IterativeBot");
+                break;
+           
+        }
+        
     }
 }

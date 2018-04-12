@@ -9,16 +9,10 @@ package csci305.javalab;
  *
  * @author Ashlan.olson
  */
-public class IterativeBot extends Player
+public class Human extends Player
 {
-    public IterativeBot(String name)
+    public Human(String name)
     {
         super(name);
-    }
-    
-    @Override
-    public Element play()
-    {
-        
     }
 }
